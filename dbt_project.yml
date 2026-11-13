@@ -5,7 +5,7 @@ version: '1.0.0'
 config-version: 2
 
 vars:
-  project_name: 'yt'
+  project_name: 'test_student_yt'
 
 # Vypnutí odesílání anonymních statistik a telemetrie
 flags:

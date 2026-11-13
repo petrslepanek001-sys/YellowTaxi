@@ -6,12 +6,12 @@
 -- ==============================================================================
 
 WITH source_data AS (
-    SELECT * FROM {{ source('raw', 'taxi_zones') }}
+    SELECT * FROM slepanek_petr_test_student_yt_raw.taxi_zones
 )
 
 SELECT
     LocationID AS location_id,
-    Borough AS borough,
+    Brough AS borough,
     Zone AS zone_name,
     service_zone
 FROM source_data
