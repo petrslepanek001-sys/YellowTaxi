@@ -1,0 +1,23 @@
+{
+  "name": "dbt + ClickHouse",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install --no-cache-dir dbt-clickhouse",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "innoverio.vscode-dbt-power-user",
+        "cldwalker.clickhouse-language-support",
+        "samuelcolvin.jinjahtml",
+        "redhat.vscode-yaml",
+        "ms-python.python"
+      ],
+      "settings": {
+        "files.associations": {
+          "*.sql": "jinja-sql"
+        },
+        "dbt.dbtIntegration": "core",
+        "dbt.enableNewLineagePanel": true
+      }
+    }
+  }
+}
